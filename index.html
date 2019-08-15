@@ -1,35 +1,44 @@
+<!DOCTYPE HTML>
 <html>
-  <title> Dr.Trust A-One Exploit </title>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.button {
-  padding: 15px 25px;
-  font-size: 24px;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
-  background-color: #4CAF50;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
-}
+	<head>
+		<title>Dr.Trust Exploit</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-.button:hover {background-color: #3e8e41}
+				<!-- Header -->
+					<header id="header">
 
-.button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-</style>
-</head>
-<script src="exploit.js" type="text/javascript"></script>
-<body>
-<button class="button" onclick="device_connect()">Connect Devices</button>
-<button class="button" onclick="exploit_start()">Start Device</button>
-<button class="button" onclick="exploit_stop()">Stop Device</button>
-<button class="button" onclick="device_disconnect()">Disconnect Devices</button>
-</body>
+						<div class="content">
+							<div class="inner">
+								<h1>Dr.Trust - Exploit</h1>
+								<p>Dr.Trust A-One Pressure Monitor works on BLuetooth Low Energy. When the device is in discovery mode, device can be discovered and exploited remotely using web pages.
+									 Device can be can started and stopped.</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><button onclick="device_connect()">CONNECT</button></li>
+								<li><button onclick="exploit_start()">START</button></li>
+								<li><button onclick="exploit_stop()">STOP</button></li>
+								<li><button onclick="device_disconnect()">DISCONNECT</button></li>
+							</ul>
+						</nav>
+					</header>
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; just2exploit <a href="https://github.com/just2exploit">github</a>.</p>
+					</footer>
+			</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/exploit.js"></script>
+
+	</body>
 </html>
